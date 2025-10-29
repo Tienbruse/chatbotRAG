@@ -44,4 +44,4 @@ make menu
 ```
 
 - Xoá index cũ: curl -X DELETE "http://localhost:9200/company-data-20240329"
-- chạy index: uv run indexer/data_20250329/script.py    
+- chạy index: uv run indexer/data_20250329/script.py    # KTPM
