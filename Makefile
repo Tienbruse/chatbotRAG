@@ -58,6 +58,18 @@ index-thongtindoanhnghiep:
 index-data-20250329:
 	uv run indexer/data_20250329/script.py
 
+benchmark-es-methods:
+	uv run scripts/benchmark_es_methods.py
+
+configure-es:
+	uv run scripts/configure_es.py
+
+compare-methods-report:
+	uv run scripts/compare_methods_report.py --baseline docs/metrics/methods_before.json --candidate docs/metrics/methods_after.json
+
+md-table-to-csv:
+	uv run scripts/md_table_to_csv.py --input docs/metrics/so_sanh_methods.md --output docs/metrics/so_sanh_methods.csv
+
 check-env:
 	@printf '=%.0s' {1..25}; echo -n " Check env "; printf '=%.0s' {1..25}; echo; \
     if [ ! -f chatbot/.env ]; then \

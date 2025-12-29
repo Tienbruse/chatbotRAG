@@ -1,4 +1,6 @@
-from typing import Any, Optional
+from __future__ import annotations
+
+from typing import Any, List, Optional
 
 from pydantic_settings import BaseSettings
 
@@ -34,6 +36,16 @@ class ExternalConfig(BaseSettings):
     ELASTICSEARCH_USER: str = "admin"
     ELASTICSEARCH_PASSWORD: str = "admin"
     ELASTICSEARCH_INDEX: str = "company-data-20240329"
+    ES_QUERY_VERSION: str = "v1"
+    ES_URL_BLACKLIST: List[str] = ["doanhnghiepmoi.vn"]
+    ES_URL_PREFERRED_DOMAINS: List[str] = [
+        "gov.vn",
+        "org.vn",
+        "fairs.vn",
+    ]
+    ES_URL_PENALTY_DOMAINS: List[str] = []
+    ES_URL_PENALTY_WEIGHT: float = -2.0
+    ES_TRACK_SCORES: bool = False
 
 
 SETTINGS = ExternalConfig()  # pyright: ignore

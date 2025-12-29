@@ -1,0 +1,54 @@
+[
+  {
+    "id": "hatinh_top5",
+    "user_input": "công ty ở hà tĩnh sản xuất vật liệu xây dựng",
+    "entities": {
+      "company_name": null,
+      "business_field": null,
+      "address": "Hà Tĩnh",
+      "num_employees": null,
+      "num_employees_operator": null,
+      "product_names": null
+    },
+    "top_k": 5
+  },
+  {
+    "id": "hatinh_top10",
+    "user_input": "tìm doanh nghiệp tại hà tĩnh kinh doanh đặc sản",
+    "entities": {
+      "company_name": null,
+      "business_field": null,
+      "address": "Hà Tĩnh",
+      "num_employees": null,
+      "num_employees_operator": null,
+      "product_names": null
+    },
+    "top_k": 10
+  },
+  {
+    "id": "hatinh_top20",
+    "user_input": "Giới thiệu các đặc sản ở tỉnh Hà Tĩnh",
+    "entities": {
+      "company_name": null,
+      "business_field": null,
+      "address": "Hà Tĩnh",
+      "num_employees": null,
+      "num_employees_operator": null,
+      "product_names": null
+    },
+    "top_k": 5
+  },
+  {
+    "id": "hatinh_top5_v2",
+    "user_input": "Giới thiệu các thực phẩm, hải sản, đặc sản nổi tiếng ở Hà Tĩnh",
+    "entities": {
+      "company_name": null,
+      "business_field": null,
+      "address": "Hà Tĩnh",
+      "num_employees": null,
+      "num_employees_operator": null,
+      "product_names": null
+    },
+    "top_k": 5
+  }
+]

@@ -1,7 +1,4 @@
 
-  Xoá index cũ: curl -X DELETE "http://localhost:9200/company-data-20240329"
-  chạy index: uv run indexer/data_20250329/script.py
-  
   - Chạy benchmark baseline (prewarm, warmup=5, batch mget=10):
 
   uv run scripts/benchmark_es_methods.py \
@@ -44,6 +41,7 @@
     --output docs/metrics/so_sanh_methods.md
 
   uv run scripts/md_table_to_csv.py --input docs/metrics/so_sanh_methods.md --output docs/metrics/so_sanh_methods.csv
+
 
   - Reset cấu hình về baseline:
 

@@ -11,7 +11,7 @@ def chat_stream(prompt):
     ).json()
     for char in response:
         yield char
-        time.sleep(0.02)
+        time.sleep(0.005)
 
 
 def save_feedback(index):
